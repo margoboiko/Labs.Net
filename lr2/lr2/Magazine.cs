@@ -10,8 +10,8 @@ namespace lr2
     class Magazine: Edition, IRateAndCopy
     {
         private Frequency _Period; //інформація про періодичність виходу журналу
-        public ArrayList Editors { get; set; }  //список редакторів журналу
-        public ArrayList Articles { get; set; } //список статей в журналі
+        Edition = new ArrayList();  //список редакторів журналу
+        Article = new ArrayList(); //список статей в журналі
 
         //конструктор з параметрами типу string, Frequency, DataTime, int для ініціалізації всіх полів 
         public Magazine(string mName, Frequency period, DateTime mDate, int mEdit, ArrayList personsList, ArrayList articleList) : base(mName, mDate, mEdit)
